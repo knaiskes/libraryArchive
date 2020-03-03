@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>All books</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Language</th>
+    <th>Publication Date</th>
+    <th>Pages</th>
+    <th>Description</th>
+    <th>Tags</th>
+   </tr>
+
+  {% for book in books_list %}
+  <tr>
+    <td>{{ book.title }}</td>
+    <td>{{ book.author }}</td>
+    <td>{{ book.language }}</td>
+    <td>{{ book.publication_date }}</td>
+    <td>{{ book.pages }}</td>
+    <td>{{ book.description }} </td>
+    <td>{% for tag in book.tags.all %}<br/>{{tag}}{% endfor %}</td>
+    </tr>
+{% endfor %}
+
+</table>
+
+{% endblock content %}
