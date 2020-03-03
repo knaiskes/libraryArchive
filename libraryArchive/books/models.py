@@ -20,10 +20,8 @@ class Book(models.Model):
 
     title = models.CharField(max_length=50)
     publication_date = models.DateField()
-    available = models.BooleanField()
     language = models.CharField(max_length=15) # could be a list but kiss for now
     pages = models.IntegerField()
-    in_stock = models.BooleanField()
     description = models.TextField(max_length=150)
 
     def __str__(self):
