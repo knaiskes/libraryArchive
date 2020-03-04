@@ -5,4 +5,10 @@
 
 <p> {{author.biography}}</p>
 
+  {% for book in books_list %}
+  <tr>
+    <td>{{ book.title }}</td>
+    </tr>
+{% endfor %}
+
 {% endblock content %}
