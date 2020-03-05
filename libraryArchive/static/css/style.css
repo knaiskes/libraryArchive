@@ -37,3 +37,26 @@ table td, th {
 }
 
 h1, h2 { text-align: center; }
+
+.authorBio{
+    width: 50%;
+    padding: 30px;
+    background-color: #fcfcfc;
+    margin: auto;
+    font-style: italic;
+    font-size: 15px;
+    border: 2px solid;
+}
+
+.books-list ul {
+    margin: auto;
+    width: 20%;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.books-list a{
+    font-style: italic;
+    text-decoration: none;
+    color: #1F3B51;
+}

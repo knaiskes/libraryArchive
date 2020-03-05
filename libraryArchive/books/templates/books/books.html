@@ -17,7 +17,7 @@
   {% for book in books_list %}
   <tr>
     <td>{{ book.title }}</td>
-    <td><a href="/authors/{{book.author.id}}">{{ book.author }}</td>
+    <td><a href="/authors/{{book.author.id}}">{{ book.author }}</a></td>
     <td>{{ book.language }}</td>
     <td>{{ book.publication_date }}</td>
     <td>{{ book.pages }}</td>
@@ -25,7 +25,6 @@
     <td>{% for tag in book.tags.all %}<br/>{{tag}}{% endfor %}</td>
     </tr>
 {% endfor %}
-
 </table>
 
 {% endblock content %}

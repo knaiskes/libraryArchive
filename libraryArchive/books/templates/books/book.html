@@ -15,14 +15,13 @@
    </tr>
   <tr>
     <td>{{ book.title }}</td>
-    <td>{{ book.author }}</td>
+    <td><a href="/authors/{{book.author.id}}">{{ book.author }}</a></td>
     <td>{{ book.language }}</td>
     <td>{{ book.publication_date }}</td>
     <td>{{ book.pages }}</td>
     <td>{{ book.description }} </td>
     <td>{% for tag in book.tags.all %}<br/>{{tag}}{% endfor %}</td>
     </tr>
-
 </table>
 
 {% endblock content %}
