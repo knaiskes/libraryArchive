@@ -1,6 +1,9 @@
 # libraryArchive
 A Web application to model a simple library archiving system
 
+### Dependencies
+[Python 3](https://www.python.org/)
+
 ## Quick Start
 
 ### Clone project
