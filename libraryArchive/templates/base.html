@@ -1,7 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <title>Library Archive</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <div class="navbar">
+      <a href="{% url 'books:books' %}"> Books </a>
+      <a href="{% url 'authors:authors' %}"> Authors </a>
+      </div>
+
   </head>
   <body>
     {% block content %}{% endblock %}
